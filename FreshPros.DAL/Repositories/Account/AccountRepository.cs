@@ -16,8 +16,7 @@ namespace FreshPros.DAL.Repositories
 
         public AccountToken login(Login param)
         {
-            Crews c = new Crews();
-            string pw = UtilsHelper.base64Encode(param.password);
+            Crews c = new Crews();            
             c = _db.QueryFirstOrDefault<Crews>("SELECT id FROM crew_reg WHERE email = @email and password = @pw", new { email = param.username, pw = pw });
             if(c != null)
             {
