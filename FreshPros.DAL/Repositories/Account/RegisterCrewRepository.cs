@@ -104,11 +104,8 @@ namespace FreshPros.DAL.Repositories.Account
                 state = param.city,
                 zip = param.zip,
                 requester_name_address = param.requester_name_address,
-                list_account_number = param.list_account_number,
-                ssn = param.ssn,
-                ein = param.ein,
+                list_account_number = param.list_account_number,               
                 date = param.date,
-                cb_signature = param.cb_signature
             };
             _db.Insert(w9);
         }
@@ -133,7 +130,6 @@ namespace FreshPros.DAL.Repositories.Account
                 alt_contact_phone_or_person = param.alt_contact_phone_or_person,
                 id_number = param.id_number,
                 id_type = param.id_type,
-                cb_signature = param.cb_signature,
                 printed_name = param.printed_name,
                 date = param.date,
                 crew_id = param.crew_id
