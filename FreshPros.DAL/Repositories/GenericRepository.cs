@@ -14,7 +14,7 @@ namespace FreshPros.DAL.Repositories
 
         public GenericRepository()
         {
-            this._db = new SqlConnection(ConfigurationManager.ConnectionStrings["freshlawn"].ConnectionString);
+            this._db = new SqlConnection(ConfigurationManager.ConnectionStrings["db"].ConnectionString);
         }
 
         public virtual long InsertRecord(T entity)
